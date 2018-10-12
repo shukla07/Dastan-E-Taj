@@ -1,0 +1,75 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.panel{
+	background-size: 100%;
+	padding: 0px !important;
+	padding-top: 3% !important;
+
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<d:MaterialHeader ui:field="header">
+            <d:MaterialNavBar ui:field="navBar" width="100%" layoutPosition="ABSOLUTE" backgroundColor="BROWN_LIGHTEN_2" shadow="1">
+                <d:MaterialNavBrand fontSize="2.2em" paddingLeft="10" text=""/>
+            </d:MaterialNavBar>
+        </d:MaterialHeader>
+		<d:MaterialContainer ui:field="con" grid="16" addStyleNames="{style.panel}">
+			<d:MaterialModal ui:field="mod1" width="200px" type="FIXED_FOOTER"
+				inDuration="500">
+				<d:MaterialModalContent>
+					<d:MaterialPanel>
+					<d:MaterialColumn>
+						<d:MaterialTextBox label="User Id" ui:field="ui" grid="s10" offset="s2"></d:MaterialTextBox>
+						<d:MaterialTextBox label="Mobile Number" ui:field="mn" grid="s10" offset="s2"></d:MaterialTextBox>
+						<d:MaterialButton text="submit" ui:field="s1"></d:MaterialButton>
+					</d:MaterialColumn>
+					</d:MaterialPanel>
+				</d:MaterialModalContent>
+			</d:MaterialModal>
+			<d:MaterialModal ui:field="mod2" width="200px" type="FIXED_FOOTER"
+				inDuration="500">
+				<d:MaterialModalContent>
+					<d:MaterialPanel>
+					<d:MaterialColumn>
+						<d:MaterialTextBox label="Enter Otp" ui:field="ot" grid="s10" offset="s2"></d:MaterialTextBox>
+						<d:MaterialButton text="Verify OTP" ui:field="s2"></d:MaterialButton>
+					</d:MaterialColumn>
+					</d:MaterialPanel>
+				</d:MaterialModalContent>
+			</d:MaterialModal>
+			<d:MaterialModal ui:field="mod3" width="200px" type="FIXED_FOOTER"
+				inDuration="500" outDuration="500">
+				<d:MaterialModalContent>
+					<d:MaterialPanel>
+					<d:MaterialColumn>
+						<d:MaterialTextBox label="New Password" type="PASSWORD" ui:field="t2" grid="s10" offset="s2"></d:MaterialTextBox>
+						<d:MaterialTextBox label="Re-enter New Password" type="PASSWORD" ui:field="t3"></d:MaterialTextBox>
+						<d:MaterialButton text="Submit" ui:field="s3"></d:MaterialButton>
+					</d:MaterialColumn>
+					</d:MaterialPanel>
+				</d:MaterialModalContent>
+			</d:MaterialModal>
+			<d:MaterialColumn ui:field="plc" width="250px">
+				<d:MaterialPanel backgroundColor="BROWN_LIGHTEN_3">
+					<d:MaterialTitle title="Dastan-e-Taj" description="Guide On Steps"></d:MaterialTitle>
+					<d:MaterialPanel backgroundColor="WHITE" shadow="3">
+					<d:MaterialRow>
+						<d:MaterialTextBox label="User ID" iconType="ACCOUNT_CIRCLE" ui:field="usi" grid="s12" />
+					</d:MaterialRow>
+					<d:MaterialRow>
+						<d:MaterialTextBox label="Password" type="PASSWORD" ui:field="pswd" iconType="LOCK" grid="s12" />
+					</d:MaterialRow>
+					<d:MaterialRow>
+						<d:MaterialLink text="Forgot Password?" ui:field="bt2" grid="s12" ></d:MaterialLink>
+						<d:MaterialButton text="Login" grid="s4" ui:field="bt1" width="100%"></d:MaterialButton>
+						
+					</d:MaterialRow>
+					</d:MaterialPanel>
+				</d:MaterialPanel>
+			</d:MaterialColumn>
+		</d:MaterialContainer>
+	</g:HTMLPanel>
+</ui:UiBinder> 

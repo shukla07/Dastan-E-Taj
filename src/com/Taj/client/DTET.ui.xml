@@ -1,0 +1,55 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:d="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	
+	.panel{
+	background-size: 100%;
+	padding: 0px !important;
+	padding-top: 10% !important;
+	
+}
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<d:MaterialHeader ui:field="header">
+            <d:MaterialNavBar ui:field="navBar" width="100%" layoutPosition="ABSOLUTE" backgroundColor="BROWN_LIGHTEN_2" shadow="1">
+                <d:MaterialNavBrand fontSize="2.2em" paddingLeft="10" text="Dastan-e-Taj"/>
+                <d:MaterialNavSection float="RIGHT">
+                    <d:MaterialLink iconType="HOME" ui:field="hm" text="Home"/>
+                    <d:MaterialLink iconType="SAVE" text="Sync"/>
+                    <d:MaterialLink iconType="ACCOUNT_CIRCLE" text="UserName" activates="dp"/>
+					<d:MaterialDropDown activator="dp" constrainWidth="true">
+						<d:MaterialLink text="Profile" ui:field="pf" iconType="ACCOUNT_CIRCLE" iconPosition="RIGHT" separator="true"/>
+						<d:MaterialLink text="Logout" ui:field="lo" iconType="LOCK" iconPosition="RIGHT" separator="true"/>
+					</d:MaterialDropDown>
+                </d:MaterialNavSection>	
+                </d:MaterialNavBar>
+        </d:MaterialHeader>
+        <d:MaterialContainer ui:field="con" grid="16" addStyleNames="{style.panel}">
+			<d:MaterialColumn ui:field="plc" width="40%">
+				<d:MaterialPanel shadow="3">
+					<d:MaterialPanel>
+					<d:MaterialRow>
+						<d:MaterialTextBox placeholder="Longitude" grid="s6" ui:field="lgtd"></d:MaterialTextBox>
+						<d:MaterialTextBox placeholder="Lattitude" grid="s6" ui:field="lttd"></d:MaterialTextBox>
+					</d:MaterialRow>
+					<d:MaterialRow>	
+						<d:MaterialTextArea placeholder="Description" grid="s12" ui:field="dsc"></d:MaterialTextArea>
+					</d:MaterialRow>
+					<d:MaterialRow>
+						<d:MaterialTextBox placeholder="Radius" grid="s2" ui:field="rd"></d:MaterialTextBox>
+						<d:MaterialTextBox placeholder="Key" grid="s2" ui:field="key"></d:MaterialTextBox>
+						<d:MaterialTextBox placeholder="Name" grid="s4" ui:field="name"></d:MaterialTextBox>
+						<d:MaterialTextBox placeholder="Link" grid="s4" ui:field="lk"></d:MaterialTextBox>
+					</d:MaterialRow>
+						<d:MaterialButton text="Submit" grid="s4" offset="s8" ui:field="bt1" width="100%"></d:MaterialButton>
+					</d:MaterialPanel>
+				</d:MaterialPanel>
+			</d:MaterialColumn>
+		</d:MaterialContainer>
+	</g:HTMLPanel>
+</ui:UiBinder> 

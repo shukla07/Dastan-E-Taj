@@ -1,0 +1,3 @@
+# Module taj
+# RPC service class, partial path of RPC policy file
+com.Taj.client.GreetingService, 3F39D627196D316325FBA8DBB8BA284F.gwt.rpc

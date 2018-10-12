@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry exported="true" kind="con" path="com.gwtplugins.gwt.eclipse.core.GWT_CONTAINER/GWT 2.8.1"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Tanuj  Singh/Desktop/BCS/Material/gwt-material-2.0-rc5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Tanuj  Singh/Desktop/BCS/Material/gwt-material-addins-2.0-rc5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Tanuj  Singh/Desktop/BCS/Material/gwt-material-jquery-2.0-rc7.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Tanuj  Singh/Desktop/BCS/Material/gwt-material-table-2.0-rc5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Tanuj  Singh/Desktop/BCS/Material/gwt-material-themes-2.0-rc5.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Tanuj  Singh/Desktop/BCS/Material/mysql-connector.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Tanuj  Singh/.p2/pool/plugins/com.gwtplugins.gwt.eclipse.sdkbundle.gwt28_2.8.0.201710131939/gwt-2.8.1/gwt-user.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/Tanuj%20%20Singh/.p2/pool/plugins/com.gwtplugins.gwt.eclipse.sdkbundle.gwt28_2.8.0.201710131939/gwt-2.8.1/doc/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

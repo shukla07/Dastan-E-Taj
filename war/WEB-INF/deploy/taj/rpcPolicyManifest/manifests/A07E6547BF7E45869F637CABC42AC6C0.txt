@@ -1,0 +1,2 @@
+serviceClass: com.Taj.client.GreetingService
+path: 3F39D627196D316325FBA8DBB8BA284F.gwt.rpc

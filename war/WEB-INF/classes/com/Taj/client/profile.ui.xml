@@ -1,0 +1,88 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:d="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	
+	.panel {
+		background-size: 100%;
+		padding: 0px !important;
+		padding-top: 10% !important;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<d:MaterialHeader ui:field="header">
+			<d:MaterialNavBar ui:field="navBar" width="100%"
+				layoutPosition="ABSOLUTE" backgroundColor="BROWN_LIGHTEN_2"
+				shadow="1">
+				<d:MaterialNavBrand fontSize="2.2em"
+					paddingLeft="10" text="Dastan-e-Taj" />
+				<d:MaterialNavSection float="RIGHT">
+					<d:MaterialLink iconType="HOME" ui:field="hm"
+						text="Home" />
+					<d:MaterialLink iconType="SAVE" text="Sync" />
+					<d:MaterialLink iconType="ACCOUNT_CIRCLE"
+						text="UserName" activates="dp" />
+					<d:MaterialDropDown activator="dp"
+						constrainWidth="true">
+						<d:MaterialLink text="Profile" ui:field="pf"
+							iconType="ACCOUNT_CIRCLE" iconPosition="RIGHT" separator="true" />
+						<d:MaterialLink text="Logout" ui:field="lo"
+							iconType="LOCK" iconPosition="RIGHT" separator="true" />
+					</d:MaterialDropDown>
+				</d:MaterialNavSection>
+			</d:MaterialNavBar>
+		</d:MaterialHeader>
+		<d:MaterialContainer ui:field="con"
+			addStyleNames="{style.panel}">
+			<d:MaterialModal ui:field="mod" width="500px"
+				type="FIXED_FOOTER" inDuration="500" outDuration="500">
+				<d:MaterialModalContent>
+					<d:MaterialPanel>
+						<d:MaterialColumn>
+							<d:MaterialTextBox label="User Id"
+								ui:field="t0" grid="s10" offset="s2"></d:MaterialTextBox>
+							<d:MaterialTextBox label="Old Password"
+								type="PASSWORD" ui:field="t1" grid="s10" offset="s2"></d:MaterialTextBox>
+							<d:MaterialTextBox label="New Password"
+								type="PASSWORD" ui:field="t2" grid="s10" offset="s2"></d:MaterialTextBox>
+							<d:MaterialTextBox
+								label="Re-Enter New Password" type="PASSWORD" ui:field="t3"></d:MaterialTextBox>
+							<d:MaterialButton text="Submit" ui:field="bt1"></d:MaterialButton>
+						</d:MaterialColumn>
+					</d:MaterialPanel>
+				</d:MaterialModalContent>
+			</d:MaterialModal>
+			<d:MaterialColumn ui:field="plc" grid="16 s6 m12"
+				width="40%">
+				<d:MaterialCard shadow="3">
+					<d:MaterialRow>
+						<d:MaterialImage></d:MaterialImage>
+						<d:MaterialCardTitle grid="s12">About</d:MaterialCardTitle>
+					</d:MaterialRow>
+					<d:MaterialRow grid="12">
+					<d:MaterialColumn grid="s4" width="40%">
+						<d:MaterialImage
+							url="http://localhost:8080/Taj/taj/user.png"></d:MaterialImage>
+					</d:MaterialColumn>
+					<d:MaterialColumn grid="s6" offset="s6 m1">
+						<d:MaterialTextBox ui:field="Un"
+							label="User Name" readOnly="true"></d:MaterialTextBox>
+						<d:MaterialTextBox ui:field="Uidd"
+							label="User Id" readOnly="true"></d:MaterialTextBox>
+						<d:MaterialTextBox ui:field="Phn"
+							label="Phone Number" readOnly="true"></d:MaterialTextBox>
+					</d:MaterialColumn>
+					</d:MaterialRow>
+					<d:MaterialRow>
+						<d:MaterialButton text="Change Password"
+							grid="s4" offset="s8 m7" ui:field="cp" />
+					</d:MaterialRow>
+				</d:MaterialCard>
+			</d:MaterialColumn>
+		</d:MaterialContainer>
+	</g:HTMLPanel>
+</ui:UiBinder> 
